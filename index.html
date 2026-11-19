@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Free Webinar | Plan a Sweet Celebration Without Overspending — Kemora Signature Bakes</title>
+  <meta name="description" content="A free live guide to choosing the right cakes, pastries, and treats for your celebration budget in Ilorin. Hosted by Kemora Signature Bakes." />
+
+  <!-- Google Fonts: Fraunces (Display) & Plus Jakarta Sans (Body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['Fraunces', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            cream: '#FFFDF9',
+            blush: '#FDF2F8',
+            cocoa: '#2C1810',
+            mocha: '#5C3D31',
+            berry: {
+              DEFAULT: '#9D174D',
+              hover: '#831843',
+              light: '#FCE7F3',
+            },
+            caramel: '#D97706',
+          },
+          animation: {
+            'float-slow': 'float 6s ease-in-out infinite',
+            'float-delayed': 'float 7s ease-in-out 2s infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+          },
+        },
+      },
+    };
+  </script>
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <style>
+    /* Scroll Reveal Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-delay-1 { transition-delay: 100ms; }
+    .reveal-delay-2 { transition-delay: 200ms; }
+    .reveal-delay-3 { transition-delay: 300ms; }
+  </style>
+</head>
+<body class="bg-cream text-cocoa font-sans antialiased selection:bg-berry/15 selection:text-berry overflow-x-hidden">
+
+  <!-- Decorative Soft Background Blobs -->
+  <div class="fixed inset-0 -z-10 pointer-events-none overflow-hidden">
+    <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-berry-light/50 blur-3xl animate-float-slow"></div>
+    <div class="absolute top-1/2 -left-32 w-80 h-80 rounded-full bg-amber-100/60 blur-3xl animate-float-delayed"></div>
+  </div>
+
+  <!-- 1. MINIMAL NAVBAR -->
+  <header class="sticky top-0 z-40 bg-cream/85 backdrop-blur-md border-b border-cocoa/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2.5 group">
+        <span class="w-9 h-9 rounded-xl bg-berry text-white flex items-center justify-center shadow-sm group-hover:scale-105 transition-transform">
+          <i data-lucide="cake-slice" class="w-5 h-5"></i>
+        </span>
+        <div>
+          <span class="font-display font-bold text-lg tracking-tight text-cocoa block leading-none">Kemora</span>
+          <span class="text-[11px] uppercase tracking-widest text-mocha font-semibold">Signature Bakes</span>
+        </div>
+      </a>
+
+      <div class="flex items-center gap-4">
+        <span class="hidden md:inline-flex items-center gap-1.5 text-xs font-medium text-mocha bg-amber-50 border border-amber-200/80 px-3 py-1.5 rounded-full">
+          <i data-lucide="map-pin" class="w-3.5 h-3.5 text-caramel"></i>
+          Adewole Estate, Ilorin
+        </span>
+        <a href="#register" class="inline-flex items-center gap-1.5 bg-berry hover:bg-berry-hover text-white text-sm font-semibold px-4 py-2 rounded-full shadow-sm hover:-translate-y-0.5 transition-all">
+          Save My Seat
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 2. HERO SECTION & REGISTRATION FORM -->
+  <section id="register" class="pt-10 pb-16 md:pt-16 md:pb-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+        <!-- Left Column: Copy -->
+        <div class="lg:col-span-7 space-y-6 reveal">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-berry-light text-berry text-xs font-bold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-berry animate-ping"></span>
+            Free Live Webinar • Ilorin & Beyond
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-5xl lg:text-[3.4rem] font-bold text-cocoa leading-[1.12] tracking-tight">
+            Plan a Sweet Celebration <span class="text-berry italic">Without Overspending</span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-mocha leading-relaxed max-w-2xl">
+            A practical step-by-step guide to choosing the right cake sizes, pastries, small chops, and chilled refreshments for your occasion—so your spread looks generous without stretching your budget.
+          </p>
+
+          <!-- Event Quick Meta Pills -->
+          <div class="grid sm:grid-cols-3 gap-3 pt-2">
+            <div class="flex items-center gap-3 bg-white border border-cocoa/10 rounded-2xl p-3.5 shadow-xs">
+              <div class="w-9 h-9 rounded-xl bg-amber-50 text-caramel flex items-center justify-center shrink-0">
+                <i data-lucide="calendar" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="text-[11px] uppercase tracking-wider text-mocha/80 font-semibold">Date & Time</p>
+                <p class="text-sm font-bold text-cocoa">Sat, Nov 28 • 7 PM</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 bg-white border border-cocoa/10 rounded-2xl p-3.5 shadow-xs">
+              <div class="w-9 h-9 rounded-xl bg-berry-light text-berry flex items-center justify-center shrink-0">
+                <i data-lucide="video" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="text-[11px] uppercase tracking-wider text-mocha/80 font-semibold">Location</p>
+                <p class="text-sm font-bold text-cocoa">Online (Link via Email)</p>
+              </div>
+            </div>
+
+            <div class="flex items-center gap-3 bg-white border border-cocoa/10 rounded-2xl p-3.5 shadow-xs">
+              <div class="w-9 h-9 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center shrink-0">
+                <i data-lucide="ticket" class="w-4 h-4"></i>
+              </div>
+              <div>
+                <p class="text-[11px] uppercase tracking-wider text-mocha/80 font-semibold">Entry Fee</p>
+                <p class="text-sm font-bold text-cocoa">100% Free Access</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Column: Registration Card -->
+        <div class="lg:col-span-5 reveal reveal-delay-1">
+          <div class="bg-white rounded-3xl p-6 sm:p-8 border border-cocoa/10 shadow-xl shadow-cocoa/5 relative">
+            <!-- Decorative corner badge -->
+            <div class="absolute -top-3.5 right-6 bg-caramel text-white text-xs font-bold px-3.5 py-1 rounded-full shadow-sm">
+              Limited Free Spots
+            </div>
+
+            <!-- Form State -->
+            <div id="formContainer">
+              <h2 class="font-display text-2xl font-bold text-cocoa">Reserve Your Free Spot</h2>
+              <p class="text-sm text-mocha mt-1 mb-6">
+                Enter your details below and we’ll send the webinar access link straight to your inbox.
+              </p>
+
+              <!-- 
+                NOTE FOR AUTOMATION HOOKUP:
+                If using Mailchimp / Brevo / System.io HTML form post, add action="YOUR_ENDPOINT_URL" method="POST"
+                or connect your webhook inside the JavaScript fetch block at the bottom of this file.
+              -->
+              <form id="webinarForm" class="space-y-4">
+                <div>
+                  <label for="firstName" class="block text-xs font-bold uppercase tracking-wider text-cocoa mb-1.5">
+                    First Name <span class="text-berry">*</span>
+                  </label>
+                  <div class="relative">
+                    <i data-lucide="user" class="w-4 h-4 text-mocha/60 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+                    <input
+                      type="text"
+                      id="firstName"
+                      name="firstName"
+                      required
+                      placeholder="e.g. Zainab"
+                      class="w-full pl-10 pr-4 py-3 rounded-xl border border-cocoa/15 bg-cream/60 text-cocoa placeholder:text-mocha/40 text-sm focus:outline-none focus:ring-2 focus:ring-berry/30 focus:border-berry transition-all"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="email" class="block text-xs font-bold uppercase tracking-wider text-cocoa mb-1.5">
+                    Email Address <span class="text-berry">*</span>
+                  </label>
+                  <div class="relative">
+                    <i data-lucide="mail" class="w-4 h-4 text-mocha/60 absolute left-3.5 top-1/2 -translate-y-1/2"></i>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      placeholder="you@example.com"
+                      class="w-full pl-10 pr-4 py-3 rounded-xl border border-cocoa/15 bg-cream/60 text-cocoa placeholder:text-mocha/40 text-sm focus:outline-none focus:ring-2 focus:ring-berry/30 focus:border-berry transition-all"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="occasion" class="block text-xs font-bold uppercase tracking-wider text-cocoa mb-1.5">
+                    Upcoming Occasion <span class="text-mocha/50 font-normal normal-case">(Optional)</span>
+                  </label>
+                  <select
+                    id="occasion"
+                    name="occasion"
+                    class="w-full px-3.5 py-3 rounded-xl border border-cocoa/15 bg-cream/60 text-cocoa text-sm focus:outline-none focus:ring-2 focus:ring-berry/30 focus:border-berry transition-all"
+                  >
+                    <option value="Birthday">Birthday Celebration</option>
+                    <option value="Family Gathering">Family Gathering / Get-Together</option>
+                    <option value="Office / Corporate">Office Milestone / Surprise</option>
+                    <option value="Just Learning">Planning Ahead / Just Learning</option>
+                  </select>
+                </div>
+
+                <button
+                  type="submit"
+                  id="submitBtn"
+                  class="w-full mt-2 bg-berry hover:bg-berry-hover text-white font-bold py-3.5 px-6 rounded-xl shadow-md shadow-berry/20 hover:-translate-y-0.5 active:translate-y-0 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <span>Send Me the Webinar Link</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+              </form>
+
+              <p class="text-xs text-center text-mocha/80 mt-4 flex items-center justify-center gap-1.5">
+                <i data-lucide="shield-check" class="w-4 h-4 text-emerald-600 shrink-0"></i>
+                Confirmation & reminders arrive in your inbox within 5 minutes.
+              </p>
+            </div>
+
+            <!-- Success State (Hidden until form submit) -->
+            <div id="successContainer" class="hidden text-center py-6 space-y-4">
+              <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto">
+                <i data-lucide="check-circle-2" class="w-8 h-8"></i>
+              </div>
+              <h3 class="font-display text-2xl font-bold text-cocoa">
+                You're Registered, <span id="userNameDisplay">Friend</span>!
+              </h3>
+              <p class="text-sm text-mocha leading-relaxed">
+                We’ve reserved your seat for <strong>Plan a Sweet Celebration Without Overspending</strong>. Check <span id="userEmailDisplay" class="font-semibold text-cocoa underline">your inbox</span> in the next 5 minutes for your confirmation email.
+              </p>
+              <div class="pt-2">
+                <a
+                  href="https://wa.me/2348028582155?text=Hello%20Kemora%20Signature%20Bakes!%20I%20just%20registered%20for%20the%20free%20celebration%20planning%20webinar."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center gap-2 text-xs font-bold text-emerald-700 bg-emerald-50 hover:bg-emerald-100 border border-emerald-200 px-4 py-2.5 rounded-full transition-colors"
+                >
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  Say Hi on WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. PAIN POINTS SECTION -->
+  <section class="py-16 bg-white border-y border-cocoa/10">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-12 reveal">
+        <span class="text-xs font-bold uppercase tracking-widest text-berry">Does This Sound Familiar?</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-cocoa mt-2">
+          Planning a treat table shouldn’t feel like guesswork
+        </h2>
+      </div>
+
+      <div class="grid sm:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl bg-cream border border-cocoa/10 flex gap-4 reveal">
+          <div class="w-11 h-11 rounded-xl bg-berry-light text-berry flex items-center justify-center shrink-0">
+            <i data-lucide="ruler" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-cocoa">Guessing the Right Cake Size</h3>
+            <p class="text-sm text-mocha mt-1 leading-relaxed">
+              Not knowing whether a 6-inch, 8-inch, or two-tier cake will actually go round for your guest list without leftovers or embarrassment.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-cream border border-cocoa/10 flex gap-4 reveal reveal-delay-1">
+          <div class="w-11 h-11 rounded-xl bg-amber-100/80 text-caramel flex items-center justify-center shrink-0">
+            <i data-lucide="wallet" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-cocoa">Worrying About Quality on a Budget</h3>
+            <p class="text-sm text-mocha mt-1 leading-relaxed">
+              Struggling to find affordable cakes and pastries that still look neat, taste rich, and match the photos you saved online.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-cream border border-cocoa/10 flex gap-4 reveal">
+          <div class="w-11 h-11 rounded-xl bg-amber-100/80 text-caramel flex items-center justify-center shrink-0">
+            <i data-lucide="calculator" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-cocoa">Underestimating Refreshment Costs</h3>
+            <p class="text-sm text-mocha mt-1 leading-relaxed">
+              Having no clear idea how much to budget once you combine cake, meat pies, doughnuts, small chops, and drinks.
+            </p>
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-cream border border-cocoa/10 flex gap-4 reveal reveal-delay-1">
+          <div class="w-11 h-11 rounded-xl bg-berry-light text-berry flex items-center justify-center shrink-0">
+            <i data-lucide="utensils" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg text-cocoa">Overwhelmed by Treat Options</h3>
+            <p class="text-sm text-mocha mt-1 leading-relaxed">
+              Not sure how to mix samosas, spring rolls, pastries, yoghurt, and zobo so both kids and adults are satisfied.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. WHAT YOU WILL LEARN -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-14 reveal">
+        <span class="text-xs font-bold uppercase tracking-widest text-caramel">Inside the Free Session</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold text-cocoa mt-2">
+          What You’ll Walk Away With
+        </h2>
+        <p class="text-mocha text-sm sm:text-base mt-3">
+          Practical, no-fluff tips tailored to real celebration budgets in Ilorin.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Card 1 -->
+        <div class="bg-white rounded-3xl p-6 border border-cocoa/10 shadow-xs hover:shadow-md hover:-translate-y-1 transition-all reveal">
+          <span class="inline-block font-display text-2xl font-bold text-berry/30 mb-3">01</span>
+          <h3 class="font-bold text-lg text-cocoa mb-2">The Guest-to-Cake Formula</h3>
+          <p class="text-sm text-mocha leading-relaxed">
+            A simple cheat sheet for picking the exact cake width and height based on your guest count—so you never overpay for extra layers.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white rounded-3xl p-6 border border-cocoa/10 shadow-xs hover:shadow-md hover:-translate-y-1 transition-all reveal reveal-delay-1">
+          <span class="inline-block font-display text-2xl font-bold text-berry/30 mb-3">02</span>
+          <h3 class="font-bold text-lg text-cocoa mb-2">Smart Pastry & Drink Combos</h3>
+          <p class="text-sm text-mocha leading-relaxed">
+            How to pair meat pies, doughnuts, samosas, and spring rolls with chilled zobo and yoghurt for maximum variety at low cost.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white rounded-3xl p-6 border border-cocoa/10 shadow-xs hover:shadow-md hover:-translate-y-1 transition-all reveal reveal-delay-2">
+          <span class="inline-block font-display text-2xl font-bold text-berry/30 mb-3">03</span>
+          <h3 class="font-bold text-lg text-cocoa mb-2">Where to Save vs. Splurge</h3>
+          <p class="text-sm text-mocha leading-relaxed">
+            Design tweaks, flavors, and topper ideas that make a simple, affordable cake look classy in every birthday photo.
+          </p>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white rounded-3xl p-6 border border-cocoa/10 shadow-xs hover:shadow-md hover:-translate-y-1 transition-all reveal reveal-delay-3">
+          <span class="inline-block font-display text-2xl font-bold text-berry/30 mb-3">04</span>
+          <h3 class="font-bold text-lg text-cocoa mb-2">Stress-Free Ordering Checklist</h3>
+          <p class="text-sm text-mocha leading-relaxed">
+            Exactly what details to send your baker and how early to book so you avoid rush charges and last-minute stress.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. WHO THIS IS FOR + ABOUT KEMORA -->
+  <section class="py-16 bg-blush/60 border-t border-cocoa/10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-16">
+
+      <!-- Who It's For -->
+      <div class="reveal">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-bold uppercase tracking-widest text-berry">Who Should Attend?</span>
+          <h2 class="font-display text-3xl font-bold text-cocoa mt-2">
+            Built for Anyone Hosting in Ilorin & Surrounding Areas
+          </h2>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <div class="bg-white/90 backdrop-blur-xs p-5 rounded-2xl border border-cocoa/10">
+            <i data-lucide="graduation-cap" class="w-6 h-6 text-berry mb-3"></i>
+            <h3 class="font-bold text-cocoa text-base">Students & Young Adults</h3>
+            <p class="text-xs text-mocha mt-1.5 leading-relaxed">
+              Celebrating birthdays or hangouts on a student-friendly budget without compromising taste.
+            </p>
+          </div>
+
+          <div class="bg-white/90 backdrop-blur-xs p-5 rounded-2xl border border-cocoa/10">
+            <i data-lucide="heart-handshake" class="w-6 h-6 text-caramel mb-3"></i>
+            <h3 class="font-bold text-cocoa text-base">Parents & Families</h3>
+            <p class="text-xs text-mocha mt-1.5 leading-relaxed">
+              Planning kids' birthdays, naming ceremonies, and warm family get-togethers at home.
+            </p>
+          </div>
+
+          <div class="bg-white/90 backdrop-blur-xs p-5 rounded-2xl border border-cocoa/10">
+            <i data-lucide="briefcase" class="w-6 h-6 text-berry mb-3"></i>
+            <h3 class="font-bold text-cocoa text-base">Working Professionals</h3>
+            <p class="text-xs text-mocha mt-1.5 leading-relaxed">
+              Organizing office surprises, send-offs, or milestone treats with zero hassle.
+            </p>
+          </div>
+
+          <div class="bg-white/90 backdrop-blur-xs p-5 rounded-2xl border border-cocoa/10">
+            <i data-lucide="sparkles" class="w-6 h-6 text-caramel mb-3"></i>
+            <h3 class="font-bold text-cocoa text-base">Small Event Planners</h3>
+            <p class="text-xs text-mocha mt-1.5 leading-relaxed">
+              Looking for reliable cake, small chops, and drink pairings that keep clients happy.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- About the Host Card -->
+      <div class="bg-white rounded-3xl p-8 md:p-10 border border-cocoa/10 shadow-sm grid md:grid-cols-12 gap-8 items-center reveal">
+        <div class="md:col-span-5">
+            <div class=" rounded-2xl overflow-hidden border border-cocoa/10 shadow-sm bg-cocoa/5 relative group object-cover">
+                <video
+                    id="kemoraVideo"
+                    src="./kemora-baking.mp4"
+                    poster="./kemora-poster.jpeg"
+                    autoplay
+                    muted
+                    loop
+                    playsinline
+                    preload="metadata"
+                    class="w-full h-full object-cover cursor-pointer"
+                    title="Click to toggle sound"
+                >
+                    Your browser does not support the video tag.
+                </video>
+
+                <!-- Location Badge -->
+                <span class="absolute bottom-3 left-3 z-10 text-[11px] font-semibold bg-white/90 text-cocoa px-3 py-1 rounded-full shadow-xs backdrop-blur-xs pointer-events-none">
+                    Adewole Estate, Ilorin
+                </span>
+
+                <!-- Unmute / Mute Toggle Button -->
+                <button
+                    type="button"
+                    id="muteToggleBtn"
+                    aria-label="Unmute video"
+                    class="absolute bottom-3 right-3 z-10 inline-flex items-center gap-1.5 text-xs font-semibold bg-cocoa/85 hover:bg-cocoa text-white px-3 py-1.5 rounded-full shadow-sm backdrop-blur-xs transition-all cursor-pointer"
+                >
+                    <i id="muteIcon" data-lucide="volume-x" class="w-3.5 h-3.5"></i>
+                    <span id="muteLabel">Unmute</span>
+                </button>
+            </div>
+        </div>
+
+        <div class="md:col-span-7 space-y-4">
+            <span class="text-xs font-bold uppercase tracking-widest text-caramel">Your Host</span>
+            <h2 class="font-display text-2xl sm:text-3xl font-bold text-cocoa">
+                Baked Fresh in Adewole Estate, Ilorin
+            </h2>
+
+            <p class="text-sm sm:text-base text-mocha leading-relaxed">
+                <strong>Kemora Signature Bakes</strong> is an Ilorin-based bakery specializing in custom celebration cakes, flaky meat pies, soft doughnuts, samosas, spring rolls, creamy yoghurt, and spiced zobo refreshments.
+            </p>
+
+            <p class="text-sm sm:text-base text-mocha leading-relaxed">
+                We created this free webinar to take the confusion out of ordering—so whether you’re planning a quiet birthday or a lively gathering, you know exactly what to order and how to get the best value for your money.
+            </p>
+
+            <p class="text-sm sm:text-base text-mocha leading-relaxed">
+                Instead of scrolling endlessly and guessing prices or portions, you’ll learn how to match treats to your occasion, budget smartly across Ilorin and nearby areas, and order with confidence.
+            </p>
+
+            <!-- Quick Highlights to Balance Vertical Height -->
+            <div class="pt-2 flex flex-wrap gap-2.5">
+                <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-cream border border-cocoa/10 text-cocoa px-3.5 py-2 rounded-full">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-berry"></i>
+                Budget-Friendly Treat Guides
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-cream border border-cocoa/10 text-cocoa px-3.5 py-2 rounded-full">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-berry"></i>
+                Cakes, Pastries & Refreshments
+                </span>
+                <span class="inline-flex items-center gap-1.5 text-xs font-semibold bg-cream border border-cocoa/10 text-cocoa px-3.5 py-2 rounded-full">
+                <i data-lucide="check" class="w-3.5 h-3.5 text-berry"></i>
+                Easy WhatsApp Enquiry Support
+                </span>
+            </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 6. FINAL CTA BANNER -->
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 reveal">
+      <div class="bg-cocoa text-cream rounded-3xl p-8 sm:p-12 text-center relative overflow-hidden">
+        <div class="absolute -right-12 -bottom-12 w-48 h-48 rounded-full bg-berry/30 blur-2xl pointer-events-none"></div>
+        <h2 class="font-display text-3xl sm:text-4xl font-bold leading-tight">
+          Ready to Plan Your Next Celebration the Smart Way?
+        </h2>
+        <p class="text-cream/80 text-sm sm:text-base max-w-xl mx-auto mt-3 mb-7">
+          Grab your free seat now and get our confirmation email + celebration planning tips sent straight to your inbox.
+        </p>
+        <a
+          href="#register"
+          class="inline-flex items-center gap-2 bg-berry hover:bg-berry-hover text-white font-bold px-7 py-3.5 rounded-full shadow-lg hover:-translate-y-0.5 transition-all"
+        >
+          <span>Reserve My Free Seat Now</span>
+          <i data-lucide="arrow-up" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. FOOTER -->
+  <footer class="border-t border-cocoa/10 py-8 text-sm text-mocha">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div class="text-center sm:text-left">
+        <p class="font-bold text-cocoa">Kemora Signature Bakes</p>
+        <p class="text-xs text-mocha/80">Adewole Estate, Ilorin, Kwara State</p>
+      </div>
+
+      <div class="flex items-center gap-5 text-xs font-semibold">
+        <a href="https://wa.me/2348028582155" target="_blank" rel="noopener noreferrer" class="hover:text-berry transition-colors flex items-center gap-1.5">
+          <i data-lucide="message-circle" class="w-4 h-4 text-emerald-600"></i>
+          WhatsApp Enquiries
+        </a>
+        <a href="#register" class="hover:text-berry transition-colors">Register for Webinar</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS: Icons, Scroll Reveal & Form Submission -->
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // IntersectionObserver for smooth scroll-reveal animations
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+
+    // Form Submission Handler
+    const form = document.getElementById('webinarForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const formContainer = document.getElementById('formContainer');
+    const successContainer = document.getElementById('successContainer');
+
+    const muteToggleBtn = document.getElementById('muteToggleBtn');
+    const muteLabel = document.getElementById('muteLabel');
+
+    function syncMuteUI() {
+    const isMuted = kemoraVideo.muted;
+    muteLabel.textContent = isMuted ? 'Unmute' : 'Muted (Tap for mute)';
+    muteLabel.textContent = isMuted ? 'Unmute' : 'Mute';
+    muteToggleBtn.setAttribute('aria-label', isMuted ? 'Unmute video' : 'Mute video');
+
+    const iconEl = document.getElementById('muteIcon');
+    if (iconEl) {
+        iconEl.setAttribute('data-lucide', isMuted ? 'volume-x' : 'volume-2');
+        lucide.createIcons();
+    }
+    }
+
+    function toggleVideoMute() {
+    kemoraVideo.muted = !kemoraVideo.muted;
+    if (!kemoraVideo.muted) {
+        kemoraVideo.play().catch(() => {});
+    }
+    syncMuteUI();
+    }
+
+    kemoraVideo.addEventListener('click', toggleVideoMute);
+    muteToggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggleVideoMute();
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const firstName = document.getElementById('firstName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const occasion = document.getElementById('occasion').value;
+
+      // Loading UI state
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span>Reserving your spot...</span>';
+
+      try {
+        /* =====================================================================
+           TODO: Connect your cousin's email automation webhook here!
+           Examples: Make.com webhook, Zapier webhook, Brevo API, or Google Apps Script
+           
+           await fetch('YOUR_AUTOMATION_WEBHOOK_URL', {
+             method: 'POST',
+             headers: { 'Content-Type': 'application/json' },
+             body: JSON.stringify({ firstName, email, occasion, submittedAt: new Date().toISOString() })
+           });
+        ===================================================================== */
+
+        // Simulated brief delay for smooth UX (remove if using real fetch above)
+        await new Promise((resolve) => setTimeout(resolve, 600));
+
+        // Update & show confirmation view
+        document.getElementById('userNameDisplay').textContent = firstName;
+        document.getElementById('userEmailDisplay').textContent = email;
+        formContainer.classList.add('hidden');
+        successContainer.classList.remove('hidden');
+      } catch (err) {
+        alert('Something went wrong. Please try again!');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<span>Send Me the Webinar Link</span>';
+      }
+    });
+  </script>
+</body>
+</html>
